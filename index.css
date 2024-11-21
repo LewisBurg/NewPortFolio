@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    text-align: center;
+    /*background: linear-gradient(rgb(20, 30, 62), rgb(7, 9, 21));*/
+    font-family: "Libre Franklin";
+    padding-top: 110px; /* Adjusted for the fixed header */
+    background-color: rgb(24, 24, 24);
+    background-image: linear-gradient(90deg, rgba(147, 147, 147, 0.108) 1px, transparent 1px), 
+                      linear-gradient(rgba(147, 147, 147, 0.101) 1px, transparent 1px);
+    background-size: 20px 20px; /* Adjust the size of the grid */
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.header {
+    z-index: 1000;
+    margin-top: -110px;
+    height: 50px;
+    margin-bottom: 40px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    width: 100%;
+    box-shadow: black 0px 10px 40px;
+}
+
+.contactlinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.contactlinks img {
+    width: 30px;
+    height: auto;
+    margin: 0 10px;
+    cursor: pointer;
+    filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(180deg);
+    transition: filter .3s;
+}
+
+.contactlinks img:hover {
+    filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(180deg);
+}
+
+.highlight {
+    color: rgb(99, 167, 255);
+}
+
+.contact{
+    color: white;
+    font-size: 14pt;
+    cursor: default;
+}
+
+.contact:hover {
+    color: rgb(212, 237, 255);
+    transition: color .5s;
+}
+
+.contact-card {
+    color: white;
+    background-color: rgb(127, 127, 127);
+    width: 400px;
+    height: 200px;
+    margin-top: 0px;
+    position: fixed;
+    right: -400px;
+    transition: .5s;
+    border-radius: 20px;
+}
+
+.about-me {
+    width: 800px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.348);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: black 0px 2px 10px;
+}
+
+.bio {
+    color: white;
+    text-align: left;
+    font-size: 1em;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 350px;
+    margin-left: 20px;
+}
+
+.bio p {
+    font-size: .75em;
+    line-height: normal;
+}
+
+.profileimg {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.profileimg:hover {
+    outline: rgb(54, 141, 255) 5px solid;
+}
+
+.stack{
+    margin: 40px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.stackicon {
+    width: 80px;
+    height: auto;
+    filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(180deg);
+    z-index: 0;
+    transition: .7s;
+}
+
+.iconandlabel:hover .stackicon {
+    /*move up*/
+    transform: translateY(-15px);
+}
+
+.iconandlabel:hover .stacklabel {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg);;
+}
+
+.stack h4 {
+    font-size: .8em;
+    filter: invert(50%) sepia(100%) saturate(0%) hue-rotate(180deg);
+}
+
+.projects{
+    margin: 40px;
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projectcard {
+    width: 400px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.24);
+    border-radius: 20px;
+    box-shadow: black 0px 2px 10px;
+}
+
+.projectcard img {
+    transition: .3s;
+}
+
+.projectcard img:hover {
+    outline: rgb(54, 141, 255) 3px solid;
+    /*dark overlay*/
+    filter: brightness(40%);
+    /*magninify*/
+    transform: scale(1.1);
+}
+
+.projectcard h4 {
+    color: white;
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.magicbtn-container {
+    height: 40px;
+}
+
+.magicbtn {
+    background-color: rgb(54, 141, 255);
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.5s;   
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border: none;
+    font-weight: 100;
+    margin-bottom: 30px;
+    height: 40px;
+}
+
+.trick-container{
+    height: 350px;
+}
+
+.thinkofacard {
+    color: white;
+    font-size: 12pt;
+    margin-top: 20px;
+}
+
+.moment-text {
+    color: white;
+    font-size: 1em;
+    height: 200px;
+}
+
+.first-card-container {
+    margin: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+}
+
+.second-card-container {
+    margin: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.got-one {
+    background-color: rgb(54, 141, 255);
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.5s;   
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border: none;
+    font-weight: 100;
+    margin-bottom: 70px;
+}
+
+.got-one:hover {
+    background-color: rgb(139, 207, 255);
+    color: rgb(55, 80, 154);
+    transition: 0.3s;
+}
+
+#card4gone {
+    display: none; 
+}
+
+.moment-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.cardimg {
+    width: 120px;
+    height: auto;
+}
+
