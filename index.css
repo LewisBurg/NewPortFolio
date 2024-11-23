@@ -131,7 +131,7 @@ body {
 }
 
 .stackicon {
-    width: 80px;
+    width: 60px;
     height: auto;
     filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(180deg);
     z-index: 0;
@@ -186,6 +186,7 @@ body {
     font-size: 1em;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-weight: lighter;
 }
 
 .magicbtn-container {
@@ -197,14 +198,13 @@ body {
     padding: 10px 15px;
     border-radius: 10px;
     color: rgb(255, 255, 255);
-    font-size: 1em;
     cursor: pointer;
     transition: 0.5s;   
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     border: none;
     font-weight: 100;
     margin-bottom: 30px;
-    height: 40px;
+    font-size: .75em;
 }
 
 .trick-container{
