@@ -114,6 +114,7 @@ body {
     height: auto;
     border-radius: 50%;
     margin-top: 50px;
+    transition: .5s;
 }
 
 .profileimg:hover {
@@ -187,6 +188,44 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: lighter;
+}
+
+.projectmodal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalbox {
+    width: 800px;
+    height: 500px;
+    background-color: rgb(44, 44, 44);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: black 0px 2px 10px;
+}
+
+.modalclose {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    color:rgba(0, 0, 0, 0.807);
+}
+
+.modalclose:hover {
+    color: rgb(208, 208, 208);
 }
 
 .magicbtn-container {

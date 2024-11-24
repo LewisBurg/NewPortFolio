@@ -3,6 +3,8 @@ $(document).ready(function() {
 
     $(".trick-container").hide();
 
+    $(".projectmodal").hide();
+
     $('.moment-text').hide();
 
     $('.second-card-container').hide();
@@ -53,6 +55,15 @@ $(document).ready(function() {
         //remove the button
         $('.magicbtn').fadeOut(2500);
     });
-        
+
+    $('.projectimg').on('click', function() {
+        $('.projectmodal').show();
+    });
+
+    $('.modalclose').on('click', function() {
+        $('.projectmodal').hide();
+
+    });
+
     });
 
