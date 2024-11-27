@@ -14,7 +14,7 @@ body {
     background-image: linear-gradient(90deg, rgba(147, 147, 147, 0.108) 1px, transparent 1px), 
                       linear-gradient(rgba(147, 147, 147, 0.101) 1px, transparent 1px);
     background-size: 20px 20px; /* Adjust the size of the grid */
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     line-height: 30px;
 }
 
